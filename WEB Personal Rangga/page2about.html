@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Me - My Personal Blog</title>
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <!-- Custom CSS -->
+  <style>
+    /* Add custom styles here */
+    body {
+      padding-top: 60px; /* Adjust according to navbar height */
+      background-color: #f4f4f4; /* Background color */
+      color: #0A122A; /* Text color */
+      position: relative; /* Add position relative for footer positioning */
+      min-height: 100vh; /* Set minimum height to full viewport height */
+      display: flex;
+      flex-direction: column;
+    }
+    .jumbotron {
+      background-color: #f8f9fa;
+      padding: 100px 0;
+      flex: 1;
+    }
+
+    #footer {
+      background: #0A122A;
+      color: #45505b;
+      font-size: 14px;
+      text-align: center;
+      padding: 20px 0;
+    }
+
+    #footer p {
+      font-size: 15;
+      font-style: italic;
+      padding: 0;
+      margin: 0 0 40px 0;
+    }
+
+    #footer .social-links {
+      margin: 0 0 40px 0;
+    }
+
+    #footer .social-links a {
+      font-size: 18px;
+      display: inline-block;
+      background: #0563bb;
+      color: #fff;
+      line-height: 40px; /* Adjust line height to match image height */
+      margin-right: 4px;
+      border-radius: 50%;
+      text-align: center;
+      width: 40px;
+      height: 40px;
+      transition: 0.3s;
+    }
+
+    #footer .social-links a:hover {
+      background: #0678e3;
+      color: #fff;
+      text-decoration: none;
+    }
+
+    #footer .credits {
+      font-size: 13px;
+    }
+
+    .back-to-top {
+      position: fixed;
+      bottom: 20px; /* Adjust distance from bottom */
+      right: 20px; /* Adjust distance from right */
+      z-index: 9999; /* Ensure it's above other elements */
+    }
+
+    .arrow-icon {
+      width: 30px; /* Adjust size of the arrow */
+      height: 30px; /* Adjust size of the arrow */
+    }
+
+    .portfolio-item img {
+      max-width: 30%; 
+      height: auto; 
+      border-radius: 10px; 
+      margin-bottom: 10px;
+    }
+
+    .navbar {
+      background-color: #0A122A !important; /* Navbar color */
+    }
+  </style>
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="page1.html">Rangga's Blog</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="page1.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="page2about.html">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="page3contacts.php">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- About Section -->
+  <div class="jumbotron">
+    <div class="container">
+      <h1 style="text-align: center; color: #0A122A;">ABOUT</h1>
+      <hr style="border-top: 2px solid #804E49;">
+      <div style="display: flex; align-items: center; justify-content: center; margin-top: 50px;">
+        <div style="flex: 0 0 auto; margin-right: 50px;">
+          <img src="DSC09889.JPG" alt="Your Image" style="width: 300px; height: 400px; border-radius: 10px;">
+        </div>
+        <div style="flex: 1 1 auto;">
+          <h3>Student</h3>
+          <p>Hello my name is I Wayan Rangga Rijasa, I am currently a student majoring in Information System.</p>
+          <ul style="list-style: none; padding: 0;">
+            <li style="margin-bottom: 10px;">&gt; <strong>Birthday:</strong> 1 January 2005</li>
+            <li style="margin-bottom: 10px;">&gt; <strong>Age:</strong> 19</li>
+            <li style="margin-bottom: 10px;">&gt; <strong>University:</strong> Ciputra University Surabaya</li>
+            <li style="margin-bottom: 10px;">&gt; <strong>Major:</strong> Information System</li>
+            <li style="margin-bottom: 10px;">&gt; <strong>Phone:</strong> 0852-4061-7304</li>
+            <li style="margin-bottom: 10px;">&gt; <strong>Email:</strong> ranggarijasa2005@gmail.com</li>
+            <li style="margin-bottom: 10px;">&gt; <strong>Residence:</strong> Surabaya, Indonesia</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Skills Section -->
+  <div class="jumbotron">
+    <div class="container">
+      <h1 style="text-align: center; color: #0A122A;">SKILLS</h1>
+      <hr style="border-top: 2px solid #804E49;">
+
+      <!-- Skill: C# -->
+      <div class="skill">
+        <p>C#</p>
+        <div class="progress">
+          <div class="progress-bar" role="progressbar" style="width: 100%; background-color: #804E49;" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">100%</div>
+        </div>
+      </div>
+
+      <!-- Skill: SQL -->
+      <div class="skill">
+        <p>SQL</p>
+        <div class="progress">
+          <div class="progress-bar" role="progressbar" style="width: 90%; background-color: #804E49;" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">90%</div>
+        </div>
+      </div>
+
+      <!-- Skill: Python -->
+      <div class="skill">
+        <p>Python</p>
+        <div class="progress">
+          <div class="progress-bar" role="progressbar" style="width: 70%; background-color: #804E49;" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100">70%</div>
+        </div>
+      </div>
+
+      <!-- Skill: HTML -->
+      <div class="skill">
+        <p>HTML</p>
+        <div class="progress">
+          <div class="progress-bar" role="progressbar" style="width: 80%; background-color: #804E49;" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">80%</div>
+        </div>
+      </div>
+
+      <!-- Skill: CSS -->
+      <div class="skill">
+        <p>CSS</p>
+        <div class="progress">
+          <div class="progress-bar" role="progressbar" style="width: 75%; background-color: #804E49;" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">75%</div>
+        </div>
+      </div>
+
+      <!-- Skill: JavaScript -->
+      <div class="skill">
+        <p>JavaScript</p>
+        <div class="progress">
+          <div class="progress-bar" role="progressbar" style="width: 70%; background-color: #804E49;" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100">70%</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Portfolio Section -->
+  <div class="jumbotron">
+    <div class="container">
+      <h1 style="text-align: center; color: #0A122A;">PORTFOLIO</h1>
+      <hr style="border-top: 2px solid #804E49;">
+      <!-- Portfolio Item 1 -->
+      <div class="portfolio-item">
+        <h3>2048 Reproduction</h3>
+        <p>
+          2048 Console Remake in C#: Lead a dedicated team to recreate the addictive puzzle game, 
+          2048, from scratch using C# and the console interface. Our project showcases meticulous attention 
+          to detail in both design and functionality, offering an engaging gameplay 
+          experience reminiscent of the original while demonstrating our proficiency in C# programming and software development.</p>
+        <img src="2046-2.png" alt="Project 1" style="width: 100%;">
+      </div>
+      <!-- Portfolio Item 2 -->
+      <div class="portfolio-item">
+        <h3>Clothing Store POS</h3>
+        <p>Clothing Store POS System in C# with SQL Integration: 
+          Spearheaded the development of a robust Point of Sale (POS) solution for a clothing store, 
+          leveraging C# for frontend functionality and SQL for seamless database integration. Our project delivers a user-friendly interface for inventory management, sales tracking, and customer transactions, 
+          demonstrating our expertise in software development, database management, and retail solutions.</p>
+        <img src="clothingstore pos.png" alt="Project 2" style="width: 100%;">
+      </div>
+      <!-- Portfolio Item 3 -->
+      <div class="portfolio-item">
+        <h3>Coffee shop POS</h3>
+        <p>Coffee Shop POS & Inventory Management System with C#, SQL, and Figma: 
+          Directed a collaborative effort to develop an all-encompassing solution catering to coffee shop operations, 
+          merging C# for versatile backend functionality, SQL for streamlined data management, and Figma for intuitive UI/UX design. 
+          Our comprehensive system efficiently handles point-of-sale transactions, inventory tracking, and sales analytics, 
+          underscoring our proficiency in software development, database integration, and user-centric design principles.</p>
+        <img src="Rp 88.png" alt="Project 3" style="width: 100%;">
+      </div>
+    </div>
+  </div>
+
+  <footer id="footer">
+    <div class="container">
+        <p>Stay connected with us for the latest updates and news. Join our community and explore more with us. Let's create together!</p>
+        <div class="social-links">
+            <a href="https://github.com/RanggaRijasa" class="Github"><img src="pngimg.com - github_PNG47.png" alt="GitHub" style="width: 40px; height: 40px; margin-bottom: 5.5px;"></a>
+            <a href="https://www.instagram.com/rangga_r42/" class="instagram"><img src="social-instagram-new-circle-512.webp" alt="Instagram" style="width: 40px; height: 40px; margin-bottom: 5px;"></a>
+            <a href="https://api.whatsapp.com/send?phone=6285241997304" class="Whatsapp"><img src="wa.gif" alt="WhatsApp" style="width: 40px; height: 40px; margin-bottom: 5px;"></a>
+        </div>
+        <div class="credits">       
+            Created by <a href="#">Rangga Rijasa</a>
+        </div>
+    </div>
+  </footer>
+
+  <div class="back-to-top">
+    <a href="#top" id="backToTopBtn">
+      <img src="uparrowtrans.png" alt="Back to Top" class="arrow-icon">
+    </a>
+  </div>
+
+  <!-- Bootstrap JS and jQuery (optional) -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+  <script>
+        document.addEventListener("DOMContentLoaded", function() {
+        var backToTopBtn = document.getElementById('backToTopBtn');
+
+        window.addEventListener('scroll', function() {
+            // Check if scroll position is at the top
+            if (window.pageYOffset === 0) {
+                backToTopBtn.style.display = 'none'; // Hide the button
+            } else {
+                backToTopBtn.style.display = 'block'; // Show the button
+            }
+        });
+        });
+  </script>
+</body>
+</html>

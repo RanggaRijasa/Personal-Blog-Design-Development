@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Article Title</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <!-- Custom CSS -->
+    <style>
+        /* Add custom styles here */
+        body {
+            padding-top: 60px; /* Adjust according to navbar height */
+            background-color: #f4f4f4; /* Background color */
+            color: #0A122A; /* Text color */
+            position: relative; /* Add position relative for footer positioning */
+            min-height: 100vh; /* Set minimum height to full viewport height */
+            display: flex;
+            flex-direction: column;
+        }
+
+        .navbar {
+            background-color: #0A122A !important; /* Navbar color */
+        }
+
+        .jumbotron {
+            background-image: url('—Pngtree—modern double color futuristic neon_1181573.jpg');
+            background-size: cover;
+            color: #fff;
+            text-align: center;
+            padding: 100px 0;
+            flex: 1;
+        }
+
+        #footer {
+            background: #0A122A;
+            color: #45505b;
+            font-size: 14px;
+            text-align: center;
+            padding: 20px 0;
+            margin-top: auto; /* Push the footer to the bottom */
+            width: 100%;
+        }
+
+        #footer p {
+            font-size: 15;
+            font-style: italic;
+            padding: 0;
+            margin: 0 0 40px 0;
+        }
+
+        #footer .social-links {
+            margin: 0 0 40px 0;
+        }
+
+        #footer .social-links a {
+            font-size: 18px;
+            display: inline-block;
+            background: #0563bb;
+            color: #fff;
+            line-height: 40px; /* Adjust line height to match image height */
+            margin-right: 4px;
+            border-radius: 50%;
+            text-align: center;
+            width: 40px;
+            height: 40px;
+            transition: 0.3s;
+        }
+
+        #footer .social-links a:hover {
+            background: #0678e3;
+            color: #fff;
+            text-decoration: none;
+        }
+
+        #footer .credits {
+            font-size: 13px;
+        }
+
+        .back-to-top {
+            position: fixed;
+            bottom: 20px; /* Adjust distance from bottom */
+            right: 20px; /* Adjust distance from right */
+            z-index: 9999; /* Ensure it's above other elements */
+        }
+
+        .arrow-icon {
+            width: 30px; /* Adjust size of the arrow */
+            height: 30px; /* Adjust size of the arrow */
+        }
+
+        .article-content {
+            margin-top: 30px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="page1.html">Rangga's Blog</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="page1.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="page2about.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="page3contacts.php">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Article Content -->
+    <div class="container">
+        <div class="jumbotron">
+            <h1>Article 3 Title</h1>
+            <p class="lead">Written by Author Name</p>
+        </div>
+        <div class="article-content">
+            
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur sit amet ex nec justo dapibus pretium. Nulla nec ultrices dolor, nec ultricies nulla. Sed rutrum, risus vel fermentum molestie, metus arcu efficitur justo, vitae malesuada velit enim et felis. Nam vel interdum velit. Nam vehicula ex at mi ultrices commodo. Proin ac ligula at nulla fermentum auctor id et ipsum. Cras id lorem ipsum. Integer convallis, magna non fringilla ultrices, leo ex congue leo, ac posuere arcu neque sed lectus. Cras nec dui vitae ex suscipit fermentum eget ut arcu. Mauris sollicitudin gravida tortor, vel dignissim turpis facilisis nec. Nullam ut malesuada libero.</p>
+            
+            <p>Morbi pellentesque metus ut dolor lacinia varius. Morbi eget velit in odio ultrices volutpat non et libero. Mauris ultrices arcu eu suscipit tempus. Curabitur ullamcorper felis et enim aliquet, eu ultricies ligula condimentum. Vestibulum id justo mi. Nam pellentesque urna at urna efficitur, et tempor dui convallis. Sed eget quam ac libero consectetur lobortis. Suspendisse non ante id nisl fringilla commodo. Sed posuere lacus id tellus fermentum, et rutrum nisi malesuada. Donec fermentum mi sed sapien tincidunt, id fermentum ipsum placerat.</p>
+            
+            <p>Quisque in lectus id odio lacinia vestibulum vitae vitae mauris. Morbi in luctus purus. Integer varius eros ac nisl ultricies, non faucibus mauris efficitur. Proin vitae libero convallis, dignissim est ac, tincidunt sapien. Mauris non velit sodales, fermentum sapien et, euismod urna. Proin vulputate malesuada mauris, eget commodo metus dictum nec. Vivamus fermentum tincidunt eros, id faucibus lectus luctus eu. Aenean vel libero id arcu tempus dignissim. Cras sed enim metus. Aenean tincidunt bibendum ex eget consectetur. Sed tincidunt ligula vel sem tincidunt vehicula. Cras sollicitudin libero eget arcu mattis, at lobortis metus eleifend.</p>
+        </div>
+    </div>
+
+    <footer id="footer">
+        <div class="container">
+            <p>Stay connected with us for the latest updates and news. Join our community and explore more with us. Let's create together!</p>
+            <div class="social-links">
+                <a href="https://github.com/RanggaRijasa" class="Github"><img src="pngimg.com - github_PNG47.png" alt="GitHub" style="width: 40px; height: 40px; margin-bottom: 5.5px;"></a>
+                <a href="https://www.instagram.com/rangga_r42/" class="instagram"><img src="social-instagram-new-circle-512.webp" alt="Instagram" style="width: 40px; height: 40px; margin-bottom: 5px;"></a>
+                <a href="https://api.whatsapp.com/send?phone=6285241997304" class="Whatsapp"><img src="wa.gif" alt="WhatsApp" style="width: 40px; height: 40px; margin-bottom: 5px;"></a>
+            </div>
+            <div class="credits">       
+                Created by <a href="#">Rangga Rijasa</a>
+            </div>
+        </div>
+    </footer>
+
+    <div class="back-to-top">
+        <a href="#top" id="backToTopBtn">
+            <img src="uparrowtrans.png" alt="Back to Top" class="arrow-icon">
+        </a>
+    </div>
+
+    <!-- Bootstrap JS and jQuery (optional) -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            var backToTopBtn = document.getElementById('backToTopBtn');
+
+            window.addEventListener('scroll', function() {
+                // Check if scroll position is at the top
+                if (window.pageYOffset === 0) {
+                    backToTopBtn.style.display = 'none'; // Hide the button
+                } else {
+                    backToTopBtn.style.display = 'block'; // Show the button
+                }
+            });
+        });
+    </script>
+</body>
+</html>

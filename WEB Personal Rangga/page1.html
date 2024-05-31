@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Personal Blog</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <!-- Custom CSS -->
+    <style>
+        body {
+            padding-top: 60px; /* Adjust according to navbar height */
+            background-color: #f4f4f4; /* Background color */
+            color: #0A122A; /* Text color */
+            position: relative; /* Add position relative for footer positioning */
+            min-height: 100vh; /* Set minimum height to full viewport height */
+            display: flex;
+            flex-direction: column;
+        }
+
+        
+
+        .navbar {
+            background-color: #0A122A !important; /* Navbar color */
+        }
+
+        .jumbotron {
+            background-image: url('wallpaperflare-cropped.jpg');
+            background-size: cover;
+            color: #fff;
+            text-align: center;
+            padding: 100px 0;
+            flex: 1;
+        }
+
+        .carousel-item img {
+            height: 280px; /* Adjust the height as needed */
+            object-fit: cover; /* Maintain aspect ratio */
+        }
+
+        .btn-primary {
+            background-color: #804E49;
+        }
+
+        .card {
+            border: 1px solid #C9A798; /* Card border color */
+            animation: fadeIn 0.5s ease-in-out;
+        }
+
+        .card-img-top {
+            height: 250px; /* Adjust the height as needed */
+            object-fit: cover; /* Maintain aspect ratio */
+        }
+
+        #footer {
+            background: #0A122A;
+            color: #45505b;
+            font-size: 14px;
+            text-align: center;
+            padding: 20px 0;
+            margin-top: auto; /* Push the footer to the bottom */
+            width: 100%;
+        }
+
+        #footer p {
+            font-size: 15;
+            font-style: italic;
+            padding: 0;
+            margin: 0 0 40px 0;
+        }
+
+        #footer .social-links {
+            margin: 0 0 40px 0;
+        }
+
+        #footer .social-links a {
+            font-size: 18px;
+            display: inline-block;
+            background: #0563bb;
+            color: #fff;
+            line-height: 40px; /* Adjust line height to match image height */
+            margin-right: 4px;
+            border-radius: 50%;
+            text-align: center;
+            width: 40px;
+            height: 40px;
+            transition: 0.3s;
+        }
+
+
+        #footer .social-links a:hover {
+            background: #0678e3;
+            color: #fff;
+            text-decoration: none;
+        }
+
+        #footer .credits {
+            font-size: 13px;
+        }
+
+        .back-to-top {
+            position: fixed;
+            bottom: 20px; /* Adjust distance from bottom */
+            right: 20px; /* Adjust distance from right */
+            z-index: 9999; /* Ensure it's above other elements */
+            
+        }
+
+        .arrow-icon {
+            width: 30px; /* Adjust size of the arrow */
+            height: 30px; /* Adjust size of the arrow */
+        }
+
+        @keyframes fadeIn {
+        from {
+            opacity: 0;
+            transform: translateY(20px);
+        }
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+}
+    </style>
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="page1.html">Rangga's Blog</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="page1.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="page2about.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="page3contacts.php">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Jumbotron -->
+    <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="wallpaperflare-cropped.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-md-block text-center">
+                    <h1>Welcome to My Personal Blog</h1>
+                    <p>This is where I share my thoughts, ideas, and experiences.</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="imagecaru2.jpg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="imagecaru3.jpg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="imagecaru4.jpg" class="d-block w-100" alt="...">
+            </div>
+        </div>
+        <!-- Manual Controls -->
+        <a class="carousel-control-prev" href="#carouselExampleSlidesOnly" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleSlidesOnly" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+        </a>
+    </div>
+
+    <!-- Blog Section -->
+    <div class="container content-wrapper mt-3 mb-5">
+        <h2>Stories of my various experiences</h2>
+        <div class="row" id="blogPosts" style="height: 500px !important;">
+            <!-- Blog posts will be dynamically generated here -->
+        </div>
+    </div>
+
+    <footer id="footer">
+        <div class="container">
+            <p>Stay connected with us for the latest updates and news. Join our community and explore more with us. Let's create together!</p>
+            <div class="social-links">
+                <a href="https://github.com/RanggaRijasa" class="Github"><img src="pngimg.com - github_PNG47.png" alt="GitHub" style="width: 40px; height: 40px; margin-bottom: 5.5px;"></a>
+                <a href="https://www.instagram.com/rangga_r42/" class="instagram"><img src="social-instagram-new-circle-512.webp" alt="Instagram" style="width: 40px; height: 40px; margin-bottom: 5px;"></a>
+                <a href="https://api.whatsapp.com/send?phone=6285241997304" class="Whatsapp"><img src="wa.gif" alt="WhatsApp" style="width: 40px; height: 40px; margin-bottom: 5px;"></a>
+            </div>
+            <div class="credits">       
+                Created by <a href="#">Rangga Rijasa</a>
+            </div>
+        </div>
+    </footer>
+    
+    
+
+    <div class="back-to-top">
+        <a href="#top" id="backToTopBtn">
+            <img src="uparrowtrans.png" alt="Back to Top" class="arrow-icon">
+        </a>
+    </div>
+
+    <!-- Bootstrap JS and jQuery (optional) -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <!-- JavaScript to fetch JSON data and generate blog posts -->
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            // JSON data for blog posts
+            var jsonData = [
+                {
+                    "title": "Building a PC during the pandemic",
+                    "image": "fractal_design_fd_ca_mesh_c_wt_tgc_meshify_c_tempered_glass_1561254.jpg",
+                    "content": "My personal experience of building my own pc. Form research to assembly.",
+                    "link": "article.html"
+                },
+                {
+                    "title": "Living alone for the first time",
+                    "image": "pexels-max-vakhtbovycn-6782466.jpg",
+                    "content": "What is it like living alone for the first time, when you only live with your family previously.",
+                    "link": "article2.html"
+                },
+                {
+                    "title": "Current obsession GUNPLA",
+                    "image": "Gunpla_Logo.svg",
+                    "content": "what is GUNPLA? What is this plastic addiction?",
+                    "link": "article3.html"
+                }
+            ];
+
+            // Get the container where blog posts will be displayed
+            var blogContainer = document.getElementById('blogPosts');
+
+            
+            jsonData.forEach((post) => {
+                var postHTML = `
+                    <div class="col-md-4 mb-4">
+                        <div class="card" style="height:450px">
+                            <img src="${post.image}" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">${post.title}</h5>
+                                <p class="card-text">${post.content}</p>
+                                <a href="${post.link}" class="btn btn-primary">Read More</a>
+                            </div>
+                        </div>
+                    </div>
+                `;
+
+                
+                blogContainer.innerHTML += postHTML;
+            });
+        });
+
+        $('.carousel').carousel({
+            interval: 3500 
+        });
+
+        document.addEventListener("DOMContentLoaded", function() {
+        var backToTopBtn = document.getElementById('backToTopBtn');
+
+        window.addEventListener('scroll', function() {
+            
+            if (window.pageYOffset === 0) {
+                backToTopBtn.style.display = 'none'; 
+            } else {
+                backToTopBtn.style.display = 'block'; 
+            }
+        });
+        });
+
+    </script>
+</body>
+</html>
